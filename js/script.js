@@ -285,10 +285,16 @@ function initImageFallbacks() {
         image.dataset.fallbackReady = 'true';
         image.loading = image.loading || 'lazy';
         image.decoding = image.decoding || 'async';
+        if (!image.referrerPolicy) {
+            image.referrerPolicy = 'no-referrer';
+        }
 
         image.addEventListener('error', () => {
             const alt = image.getAttribute('alt') || 'Aura Home';
-            image.src = createPlaceholderImage(alt);
+            image.src = 'img/image-placeholder.svg';
+            image.addEventListener('error', () => {
+                image.src = createPlaceholderImage(alt);
+            }, { once: true });
         }, { once: true });
     });
 }

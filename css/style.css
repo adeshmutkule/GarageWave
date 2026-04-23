@@ -1406,37 +1406,7 @@ footer .border-top {
     }
 }
 
-@media (max-width:767.98px) {
-    .hero-section {
-        padding-top: 5.5rem;
-        padding-bottom: 4rem
-    }
-
-    .hero-content {
-        padding: 1.6rem!important
-    }
-
-    .section-title::after {
-        width: 100%
-    }
-
-    .split-content,.text-wrapper,.collection-content {
-        padding: 1.6rem
-    }
-
-    .collection-hero {
-        min-height: 520px
-    }
-
-    .about-hero {
-        padding: 5.2rem 0
-    }
-
-    footer {
-        margin-top: 3rem;
-        padding-top: 3rem
-    }
-}
+/* Consolidated into the larger mobile breakpoint block near the end of file. */
 
 @media (prefers-reduced-motion:reduce) {
     *,::before,::after {
@@ -1657,20 +1627,6 @@ html[data-theme=dark] .gw-mobile-nav a,html[data-theme=dark] .gw-mobile-nav butt
 
     to {
         background-position: -200%0
-    }
-}
-
-@media (max-width:767.98px) {
-    .gw-mobile-nav {
-        display: inline-flex
-    }
-
-    body {
-        padding-bottom: 84px
-    }
-
-    .navbar .container {
-        gap: .5rem
     }
 }
 
@@ -2290,6 +2246,10 @@ html[data-theme=dark] .section-title::after,html[data-theme=dark] .page-header::
         padding-bottom: 3.2rem
     }
 
+    .hero-content {
+        padding: 1.6rem!important
+    }
+
     .hero-content,.gw-module,.product-card,.value-card,.filter-sidebar,.profile-sidebar,.cart-summary,.order-card,.address-card,.route-planner-panel,.shop-guide-card,.collection-intro-panel,.collection-grid-panel {
         border-radius: 18px;
         box-shadow: 0 10px 24px rgba(18,56,122,.12)
@@ -2303,6 +2263,72 @@ html[data-theme=dark] .section-title::after,html[data-theme=dark] .page-header::
     .section-title,.profile-section-title,.collection-content h2,.text-wrapper h2,.route-planner-panel h2 {
         line-height: 1.08;
         letter-spacing: -.02em
+    }
+
+    .section-title::after {
+        width: 100%
+    }
+
+    .split-content,.text-wrapper,.collection-content {
+        padding: 1.6rem
+    }
+
+    .about-feature-img {
+        height: 280px!important;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
+    }
+
+    .product-buy-row {
+        flex-wrap: wrap;
+    }
+
+    .product-buy-row .qty-selector {
+        flex: 1 1 140px;
+    }
+
+    .product-buy-row .btn-wishlist {
+        width: 52px;
+        flex: 0 0 52px;
+        height: 52px;
+    }
+
+    .product-buy-row .btn.btn-primary {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .cart-item-actions {
+        flex-wrap: wrap;
+        gap: .75rem;
+        align-items: stretch!important;
+    }
+
+    .cart-item-actions .btn-remove {
+        width: 100%;
+        margin-left: 0!important;
+        text-align: left;
+        padding: .6rem .8rem;
+        border-radius: 12px;
+        background: rgba(255, 240, 243, .9);
+        border: 1px solid rgba(182, 47, 83, .18);
+    }
+
+    .cart-item-actions .btn-remove i {
+        opacity: .9;
+    }
+
+    .collection-hero {
+        min-height: 520px
+    }
+
+    .about-hero {
+        padding: 5.2rem 0
+    }
+
+    footer {
+        margin-top: 3rem;
+        padding-top: 3rem
     }
 
     .route-board-google-map {

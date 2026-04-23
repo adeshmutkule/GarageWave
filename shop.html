@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Collection | Aura Home</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aura Home</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <a href="#" class="nav-icon"><i class="bi bi-search"></i></a>
+                    <a href="profile.html" class="nav-icon"><i class="bi bi-person"></i></a>
+                    <a href="cart.html" class="nav-icon position-relative">
+                        <i class="bi bi-bag"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark" style="font-size: 0.65rem;">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header text-center">
+        <div class="container">
+            <h1 class="display-4" style="font-family: var(--font-heading);">All Collections</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center mt-3">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-muted">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Shop Intro -->
+    <section class="container pb-4">
+        <div class="section-intro text-center mb-4" data-aos="fade-up">
+            <span class="section-kicker">Shop Smart</span>
+            <h2 class="section-title mx-auto">Curated picks that help you furnish every corner with confidence</h2>
+            <p class="text-muted mx-auto mb-0" style="max-width: 720px;">Browse the best selling essentials, seasonal picks, and room-based combinations designed to make the shopping flow feel cleaner and more intentional.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="shop-guide-card h-100">
+                    <span class="shop-guide-tag">New Drop</span>
+                    <h4>Fresh arrivals with soft modern lines</h4>
+                    <p class="text-muted mb-3">See newly added lounge chairs, tables, and decor pieces that fit the blue premium theme.</p>
+                    <a href="#" class="btn btn-outline btn-sm">Browse New</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="shop-guide-card h-100">
+                    <span class="shop-guide-tag">Best Sellers</span>
+                    <h4>Most loved products, already proven in real homes</h4>
+                    <p class="text-muted mb-3">A quick way to find pieces with the strongest ratings, most saves, and repeat interest.</p>
+                    <a href="#" class="btn btn-outline btn-sm">View Best Sellers</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="300">
+                <div class="shop-guide-card shop-guide-card-accent h-100">
+                    <span class="shop-guide-tag">Bundle & Save</span>
+                    <h4>Mix pieces by room and save on complete setups</h4>
+                    <p class="text-muted mb-3">Combine seating, lighting, and storage for a more complete look without extra effort.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Build a Set</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop By Space -->
+    <section class="container pb-4">
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="value-card text-center">
+                    <i class="bi bi-house-door value-icon"></i>
+                    <h4 class="mb-3">Living Room</h4>
+                    <p class="text-muted small mb-0">Sofas, accent chairs, and coffee tables with a calm blue tone.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="value-card text-center">
+                    <i class="bi bi-lamp value-icon"></i>
+                    <h4 class="mb-3">Lighting</h4>
+                    <p class="text-muted small mb-0">Warm task lighting and sculptural floor lamps for layered interiors.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="value-card text-center">
+                    <i class="bi bi-brush value-icon"></i>
+                    <h4 class="mb-3">Decor Picks</h4>
+                    <p class="text-muted small mb-0">Finish the room with accessories that add color, texture, and balance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="container py-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-lg-3 mb-5">
+                <div class="filter-sidebar">
+                    <!-- Categories -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Categories</h4>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="cat1" checked>
+                            <label class="form-check-label" for="cat1">Sofas & Armchairs <span class="text-muted fs-6">(24)</span></label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="cat2">
+                            <label class="form-check-label" for="cat2">Tables & Chairs <span class="text-muted fs-6">(18)</span></label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="cat3">
+                            <label class="form-check-label" for="cat3">Beds & Mattresses <span class="text-muted fs-6">(12)</span></label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="cat4">
+                            <label class="form-check-label" for="cat4">Storage <span class="text-muted fs-6">(9)</span></label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="cat5">
+                            <label class="form-check-label" for="cat5">Lighting <span class="text-muted fs-6">(15)</span></label>
+                        </div>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Price Range</h4>
+                        <input type="range" class="form-range" min="0" max="5000" id="priceRange" style="accent-color: var(--color-text-main);">
+                        <div class="d-flex justify-content-between mt-2 text-muted small">
+                            <span>$0</span>
+                            <span>$5,000+</span>
+                        </div>
+                    </div>
+
+                    <!-- Material -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Material</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <div class="color-dot active" style="background-color: #8B5A2B;" data-bs-toggle="tooltip" title="Oak Wood"></div>
+                            <div class="color-dot" style="background-color: #D2B48C;" data-bs-toggle="tooltip" title="Pine Wood"></div>
+                            <div class="color-dot" style="background-color: #2F4F4F;" data-bs-toggle="tooltip" title="Metal"></div>
+                            <div class="color-dot" style="background-color: #F5F5DC;" data-bs-toggle="tooltip" title="Linen"></div>
+                            <div class="color-dot" style="background-color: #1A1A1A;" data-bs-toggle="tooltip" title="Leather"></div>
+                        </div>
+                    </div>
+
+                    <!-- Rating -->
+                    <div class="filter-group">
+                        <h4 class="filter-title">Rating</h4>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="rating" id="rating5">
+                            <label class="form-check-label text-warning" for="rating5">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="rating" id="rating4">
+                            <label class="form-check-label text-warning" for="rating4">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i> & Up
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <main class="col-lg-9">
+                <div class="shop-feature-banner mb-4" data-aos="fade-up">
+                    <div>
+                        <span class="shop-feature-label">Editor Pick</span>
+                        <h3 class="mb-2">Shop the calm blue edit for modern homes</h3>
+                        <p class="mb-0 text-muted">A quick collection of pieces selected for balance, comfort, and an easy visual flow.</p>
+                    </div>
+                    <a href="collections.html" class="btn btn-primary">Explore Edit</a>
+                </div>
+
+                <!-- Top Bar -->
+                <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+                    <p class="mb-0 text-muted">Showing 1-9 of 24 results</p>
+                    <div class="d-flex align-items-center">
+                        <label for="sortBy" class="me-2 text-muted text-nowrap">Sort by:</label>
+                        <select id="sortBy" class="form-select form-select-sm border-0 bg-light w-auto" style="box-shadow: none;">
+                            <option>Newest Arrivals</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Popularity</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Products -->
+                <div class="row">
+                    <!-- Product 1 -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card product-card">
+                            <div class="img-wrapper">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Minimalist Sofa">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="product-title"><a href="product.html">Minimalist 3-Seater</a></h5>
+                                <p class="text-muted small mb-2">Premium Boucle</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="product-price">$1,299.00</span>
+                                 <button class="btn btn-sm btn-outline-dark rounded-pill"><i
+                                        class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card product-card">
+                            <span class="card-badge bg-dark text-white">Sale</span>
+                            <div class="img-wrapper">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1532372576444-eea15c1202f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Coffee Table">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="product-title"><a href="product.html">Oak Coffee Table</a></h5>
+                                <p class="text-muted small mb-2">Solid Oak</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <span class="product-price text-danger me-2">$249.00</span>
+                                        <span class="text-decoration-line-through text-muted small">$349.00</span>
+                                    </div>
+                                 <button class="btn btn-sm btn-outline-dark rounded-pill"><i
+                                        class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card product-card">
+                            <div class="img-wrapper">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Floor Lamp">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="product-title"><a href="product.html">Arc Floor Lamp</a></h5>
+                                <p class="text-muted small mb-2">Brushed Brass</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="product-price">$189.00</span>
+                                 <button class="btn btn-sm btn-outline-dark rounded-pill"><i
+                                        class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card product-card">
+                            <span class="card-badge">New</span>
+                            <div class="img-wrapper">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Nordic Chair">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="product-title"><a href="product.html">Nordic Lounge Chair</a></h5>
+                                <p class="text-muted small mb-2">Wood & Fabric</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="product-price">$349.00</span>
+                                 <button class="btn btn-sm btn-outline-dark rounded-pill"><i
+                                        class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card product-card">
+                            <div class="img-wrapper">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Dining Chair">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="product-title"><a href="product.html">Velvet Dining Chair</a></h5>
+                                <p class="text-muted small mb-2">Velvet & Steel</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="product-price">$129.00</span>
+                                 <button class="btn btn-sm btn-outline-dark rounded-pill"><i
+                                        class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card product-card">
+                            <div class="img-wrapper">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Bed Frame">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="product-title"><a href="product.html">Platform Bed Frame</a></h5>
+                                <p class="text-muted small mb-2">Walnut Wood</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="product-price">$899.00</span>
+                                 <button class="btn btn-sm btn-outline-dark rounded-pill"><i
+                                        class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="mt-5" aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1"><i class="bi bi-chevron-left"></i></a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h3 class="navbar-brand mb-4 d-block">Aura Home</h3>
+                    <p class="text-muted pe-lg-4">Crafting premium, sustainable furniture that turns houses into sanctuaries. Elevate your living space with our timeless designs.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Shop</h5>
+                    <div class="footer-links">
+                        <a href="#">Living Room</a>
+                        <a href="#">Bedroom</a>
+                        <a href="#">Dining</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Company</h5>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="#">Sustainability</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <form class="d-flex mt-3">
+                        <input type="email" class="form-control me-2 bg-light border-0" placeholder="Enter your email" style="padding: 0.75rem;">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-12 text-center">
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                        <p class="text-muted small mb-0">&copy; 2026 GarageWave Home <span style="color: #e03131;">&#10084;</span>. All rights reserved.</p>
+                        <div class="footer-links d-inline-flex gap-3 mb-0">
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

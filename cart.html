@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Aura Home</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aura Home</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <a href="#" class="nav-icon"><i class="bi bi-search"></i></a>
+                    <a href="profile.html" class="nav-icon"><i class="bi bi-person"></i></a>
+                    <a href="cart.html" class="nav-icon position-relative">
+                        <i class="bi bi-bag-fill text-dark"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark" style="font-size: 0.65rem;">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Content -->
+    <section class="container py-5">
+        <h1 class="mb-5" style="font-family: var(--font-heading);">Shopping Cart (2)</h1>
+
+        <section class="route-planner-panel mb-4" data-aos="fade-up">
+            <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-3">
+                <div>
+                    <span class="section-kicker">Delivery Route</span>
+                    <h2 class="section-title mb-2">Plan the drop-off order for a smoother home setup</h2>
+                    <p class="text-muted mb-0">A route-style overview helps you see the sequence, timing, and stops before checkout.</p>
+                </div>
+                <a href="#" class="btn btn-primary align-self-start">Optimize</a>
+            </div>
+
+            <div class="route-summary-row mb-3">
+                <span class="route-summary-chip">3 stops</span>
+                <span class="route-summary-chip">2.9 mi total</span>
+                <span class="route-summary-chip">White-glove delivery</span>
+            </div>
+
+            <div class="route-board mb-4">
+                <div class="route-board-map route-board-google-map">
+                    <iframe
+                        id="gw-cart-map-frame"
+                        title="Current delivery location on Google Maps"
+                        src="https://www.google.com/maps?q=Maharashtra,India&z=7&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen></iframe>
+                    <div class="route-map-overlay">
+                        <span class="route-map-overlay-label">Google Maps</span>
+                        <span id="gw-cart-map-note">Maharashtra, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="route-stop-list">
+                <div class="route-stop-item">
+                    <div class="route-handle"><i class="bi bi-grip-vertical"></i></div>
+                    <div class="route-stop-badge">1</div>
+                    <div class="route-stop-copy">
+                        <h4>The Sofas</h4>
+                        <p class="text-muted mb-0">412 Palm Blvd <span class="route-status">Start here</span></p>
+                    </div>
+                    <div class="route-stop-meta">7 AM</div>
+                    <button class="route-remove" type="button" aria-label="Remove stop"><i class="bi bi-trash3"></i></button>
+                </div>
+                <div class="route-stop-item">
+                    <div class="route-handle"><i class="bi bi-grip-vertical"></i></div>
+                    <div class="route-stop-badge">2</div>
+                    <div class="route-stop-copy">
+                        <h4>Moving Out Sale</h4>
+                        <p class="text-muted mb-0">205 Indian River Dr <span class="route-status">0.8 mi</span></p>
+                    </div>
+                    <div class="route-stop-meta">9 AM</div>
+                    <button class="route-remove" type="button" aria-label="Remove stop"><i class="bi bi-trash3"></i></button>
+                </div>
+                <div class="route-stop-item mb-0">
+                    <div class="route-handle"><i class="bi bi-grip-vertical"></i></div>
+                    <div class="route-stop-badge">3</div>
+                    <div class="route-stop-copy">
+                        <h4>Suncoat Estate</h4>
+                        <p class="text-muted mb-0">88 Merritt Ave <span class="route-status">2.1 mi</span></p>
+                    </div>
+                    <div class="route-stop-meta">7 AM</div>
+                    <button class="route-remove" type="button" aria-label="Remove stop"><i class="bi bi-trash3"></i></button>
+                </div>
+            </div>
+
+            <div class="route-action-bar mt-4">
+                <a href="#" class="btn btn-primary btn-lg px-4">Start Navigation</a>
+                <p class="text-muted small mb-0">Use this as a clean delivery plan before you complete checkout.</p>
+            </div>
+        </section>
+
+        <div class="row g-4 mb-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="value-card text-center">
+                    <i class="bi bi-shield-lock value-icon"></i>
+                    <h4 class="mb-3">Secure Checkout</h4>
+                    <p class="text-muted small mb-0">Encrypted checkout and trusted payment methods are ready at the next step.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="value-card text-center">
+                    <i class="bi bi-truck value-icon"></i>
+                    <h4 class="mb-3">Delivery Support</h4>
+                    <p class="text-muted small mb-0">Delivery dates and shipping updates are calculated before payment.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="value-card text-center">
+                    <i class="bi bi-arrow-return-left value-icon"></i>
+                    <h4 class="mb-3">Return Friendly</h4>
+                    <p class="text-muted small mb-0">Simple returns help you order with confidence and less friction.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <!-- Cart Items -->
+            <div class="col-lg-8">
+                <!-- Item 1 -->
+                <div class="cart-item">
+                    <div class="cart-img-wrapper">
+                        <a href="product.html">
+                            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Minimalist Sofa">
+                        </a>
+                    </div>
+                    <div class="cart-item-details">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div>
+                                <h3 class="cart-item-title"><a href="product.html">Minimalist 3-Seater</a></h3>
+                                <p class="text-muted small mb-0">Color: Oatmeal Boucle</p>
+                                <p class="text-muted small">Size: 3-Seater</p>
+                            </div>
+                            <span class="fw-semibold fs-5 d-none d-md-block">$1,299.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center cart-item-actions">
+                            <div class="qty-selector">
+                                <button class="qty-btn qty-minus"><i class="bi bi-dash"></i></button>
+                                <input type="text" class="qty-input" value="1" readonly>
+                                <button class="qty-btn qty-plus"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span class="fw-semibold fs-5 d-md-none">$1,299.00</span>
+                            <button class="btn-remove ms-4"><i class="bi bi-trash3 me-1"></i> Remove</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="cart-item">
+                    <div class="cart-img-wrapper">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1532372576444-eea15c1202f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Coffee Table">
+                        </a>
+                    </div>
+                    <div class="cart-item-details">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div>
+                                <h3 class="cart-item-title"><a href="#">Oak Coffee Table</a></h3>
+                                <p class="text-muted small mb-0">Material: Solid Oak</p>
+                            </div>
+                            <div class="text-end d-none d-md-block">
+                                <span class="fw-semibold fs-5 text-danger">$249.00</span><br>
+                                <span class="text-decoration-line-through text-muted small">$349.00</span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center cart-item-actions">
+                            <div class="qty-selector">
+                                <button class="qty-btn qty-minus"><i class="bi bi-dash"></i></button>
+                                <input type="text" class="qty-input" value="1" readonly>
+                                <button class="qty-btn qty-plus"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <div class="text-end d-md-none">
+                                <span class="fw-semibold fs-5 text-danger">$249.00</span>
+                            </div>
+                            <button class="btn-remove ms-4"><i class="bi bi-trash3 me-1"></i> Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="col-lg-4">
+                <div class="cart-summary">
+                    <h4 class="mb-4">Order Summary</h4>
+                    <div class="summary-row text-muted">
+                        <span>Subtotal</span>
+                        <span>$1,648.00</span>
+                    </div>
+                    <div class="summary-row text-muted">
+                        <span>Discount (Sale)</span>
+                        <span class="text-success">-$100.00</span>
+                    </div>
+                    <div class="summary-row text-muted">
+                        <span>Shipping</span>
+                        <span>Calculated at next step</span>
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span>Estimated Total</span>
+                        <span>$1,548.00</span>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <p class="small text-muted mb-3"><i class="bi bi-shield-check me-1"></i> Secure Checkout. Taxes and shipping calculated at checkout.</p>
+                        <div class="sticky-checkout">
+                            <button class="btn btn-primary w-100 fs-6 py-3">Proceed to Checkout</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Accepted Payments -->
+                <div class="text-center mt-4">
+                    <p class="small text-muted mb-2">We Accept</p>
+                    <div class="d-flex justify-content-center gap-2 text-muted fs-4">
+                        <i class="bi bi-credit-card"></i>
+                        <i class="bi bi-paypal"></i>
+                        <i class="bi bi-apple"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h3 class="navbar-brand mb-4 d-block">Aura Home</h3>
+                    <p class="text-muted pe-lg-4">Crafting premium, sustainable furniture that turns houses into sanctuaries.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Shop</h5>
+                    <div class="footer-links">
+                        <a href="#">Living Room</a>
+                        <a href="#">Bedroom</a>
+                        <a href="#">Dining</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Company</h5>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="#">Sustainability</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <form class="d-flex mt-3">
+                        <input type="email" class="form-control me-2 bg-light border-0" placeholder="Enter your email" style="padding: 0.75rem;">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-12 text-center">
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                        <p class="text-muted small mb-0">&copy; 2026 GarageWave Home <span style="color: #e03131;">&#10084;</span>. All rights reserved.</p>
+                        <div class="footer-links d-inline-flex gap-3 mb-0">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | Aura Home</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aura Home</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <a href="#" class="nav-icon"><i class="bi bi-search"></i></a>
+                    <a href="profile.html" class="nav-icon"><i class="bi bi-person-fill text-dark"></i></a>
+                    <a href="cart.html" class="nav-icon position-relative">
+                        <i class="bi bi-bag"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark" style="font-size: 0.65rem;">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Content -->
+    <section class="container py-5">
+        <div class="row g-4 mb-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="value-card text-center">
+                    <i class="bi bi-grid value-icon"></i>
+                    <h4 class="mb-3">Quick Overview</h4>
+                    <p class="text-muted small mb-0">Track orders, saved items, and account activity in one place.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="value-card text-center">
+                    <i class="bi bi-heart value-icon"></i>
+                    <h4 class="mb-3">Saved Picks</h4>
+                    <p class="text-muted small mb-0">Keep favorite furniture and wishlist items ready for later.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="value-card text-center">
+                    <i class="bi bi-gear value-icon"></i>
+                    <h4 class="mb-3">Account Tools</h4>
+                    <p class="text-muted small mb-0">Edit details, manage addresses, and keep settings current.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <!-- Sidebar -->
+            <div class="col-lg-3">
+                <div class="text-center mb-4">
+                    <div class="user-avatar mx-auto">JD</div>
+                    <h4 class="mb-0">John Doe</h4>
+                    <p class="text-muted small">john.doe@example.com</p>
+                </div>
+                
+                <div class="profile-sidebar">
+                    <a href="#dashboard" class="profile-nav-link active" data-bs-toggle="pill"><i class="bi bi-grid"></i> Dashboard</a>
+                    <a href="#orders" class="profile-nav-link" data-bs-toggle="pill"><i class="bi bi-box-seam"></i> Order History</a>
+                    <a href="#addresses" class="profile-nav-link" data-bs-toggle="pill"><i class="bi bi-geo-alt"></i> Addresses</a>
+                    <a href="#wishlist" class="profile-nav-link" data-bs-toggle="pill"><i class="bi bi-heart"></i> Wishlist</a>
+                    <a href="#settings" class="profile-nav-link" data-bs-toggle="pill"><i class="bi bi-gear"></i> Settings</a>
+                    <a href="#" class="profile-nav-link text-danger"><i class="bi bi-box-arrow-right"></i> Logout</a>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-lg-9">
+                <div class="tab-content">
+                    
+                    <!-- Dashboard -->
+                    <div class="tab-pane fade show active" id="dashboard">
+                        <h2 class="profile-section-title">Dashboard</h2>
+                        <p class="text-muted mb-4">Welcome back, John! From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
+                        
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card bg-light border-0 h-100 p-4 text-center">
+                                    <i class="bi bi-box-seam fs-1 text-muted mb-2"></i>
+                                    <h5>3</h5>
+                                    <p class="text-muted small mb-0">Total Orders</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-light border-0 h-100 p-4 text-center">
+                                    <i class="bi bi-heart fs-1 text-muted mb-2"></i>
+                                    <h5>12</h5>
+                                    <p class="text-muted small mb-0">Wishlist Items</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-light border-0 h-100 p-4 text-center">
+                                    <i class="bi bi-wallet2 fs-1 text-muted mb-2"></i>
+                                    <h5>$0.00</h5>
+                                    <p class="text-muted small mb-0">Store Credit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Orders -->
+                    <div class="tab-pane fade" id="orders">
+                        <h2 class="profile-section-title">Order History</h2>
+                        
+                        <div class="order-card">
+                            <div class="d-flex justify-content-between align-items-start mb-3 pb-3 border-bottom">
+                                <div>
+                                    <span class="badge bg-success mb-2">Delivered</span>
+                                    <h5 class="mb-0">Order #ORD-84729</h5>
+                                    <p class="text-muted small mb-0">Placed on October 12, 2025</p>
+                                </div>
+                                <div class="text-end">
+                                    <h5 class="mb-0">$1,548.00</h5>
+                                    <a href="#" class="text-decoration-underline small">View Invoice</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Item" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <p class="fw-medium mb-0">Minimalist 3-Seater</p>
+                                    <p class="text-muted small mb-0">Qty: 1</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-card">
+                            <div class="d-flex justify-content-between align-items-start mb-3 pb-3 border-bottom">
+                                <div>
+                                    <span class="badge bg-success mb-2">Delivered</span>
+                                    <h5 class="mb-0">Order #ORD-73921</h5>
+                                    <p class="text-muted small mb-0">Placed on August 05, 2025</p>
+                                </div>
+                                <div class="text-end">
+                                    <h5 class="mb-0">$349.00</h5>
+                                    <a href="#" class="text-decoration-underline small">View Invoice</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Item" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <p class="fw-medium mb-0">Nordic Lounge Chair</p>
+                                    <p class="text-muted small mb-0">Qty: 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Addresses -->
+                    <div class="tab-pane fade" id="addresses">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h2 class="profile-section-title mb-0 border-0">Saved Addresses</h2>
+                            <button class="btn btn-outline-dark btn-sm"><i class="bi bi-plus-lg"></i> Add New</button>
+                        </div>
+                        
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="address-card">
+                                    <span class="address-badge border border-dark text-dark">Default</span>
+                                    <h5 class="mb-3">Home</h5>
+                                    <p class="text-muted mb-1">John Doe</p>
+                                    <p class="text-muted mb-1">123 Design Avenue, Apt 4B</p>
+                                    <p class="text-muted mb-1">New York, NY 10012</p>
+                                    <p class="text-muted mb-3">United States</p>
+                                    <div class="d-flex gap-3">
+                                        <a href="#" class="text-decoration-underline small">Edit</a>
+                                        <a href="#" class="text-decoration-underline small text-danger">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="address-card">
+                                    <h5 class="mb-3">Office</h5>
+                                    <p class="text-muted mb-1">John Doe</p>
+                                    <p class="text-muted mb-1">456 Corporate Blvd, Floor 12</p>
+                                    <p class="text-muted mb-1">New York, NY 10001</p>
+                                    <p class="text-muted mb-3">United States</p>
+                                    <div class="d-flex gap-3">
+                                        <a href="#" class="text-decoration-underline small">Edit</a>
+                                        <a href="#" class="text-decoration-underline small text-danger">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wishlist -->
+                    <div class="tab-pane fade" id="wishlist">
+                        <h2 class="profile-section-title">My Wishlist</h2>
+                        <div class="row">
+                            <!-- Item -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card">
+                                    <div class="img-wrapper">
+                                        <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Floor Lamp">
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h5 class="product-title"><a href="#">Arc Floor Lamp</a></h5>
+                                                <span class="product-price">$189.00</span>
+                                            </div>
+                                            <button class="btn btn-link text-danger p-0"><i class="bi bi-heart-fill"></i></button>
+                                        </div>
+                                        <button class="btn btn-outline w-100 mt-3 py-2">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card">
+                                    <div class="img-wrapper">
+                                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Dining Chair">
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h5 class="product-title"><a href="#">Velvet Dining Chair</a></h5>
+                                                <span class="product-price">$129.00</span>
+                                            </div>
+                                            <button class="btn btn-link text-danger p-0"><i class="bi bi-heart-fill"></i></button>
+                                        </div>
+                                        <button class="btn btn-outline w-100 mt-3 py-2">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Settings -->
+                    <div class="tab-pane fade" id="settings">
+                        <h2 class="profile-section-title">Account Settings</h2>
+                        <form class="row g-4 max-w-md">
+                            <div class="col-md-6">
+                                <label class="form-label text-muted small">First Name</label>
+                                <input type="text" class="form-control" value="John">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted small">Last Name</label>
+                                <input type="text" class="form-control" value="Doe">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label text-muted small">Email Address</label>
+                                <input type="email" class="form-control" value="john.doe@example.com">
+                            </div>
+                            <div class="col-12 mt-5">
+                                <h5 class="mb-3">Change Password</h5>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label text-muted small">Current Password</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted small">New Password</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted small">Confirm New Password</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h3 class="navbar-brand mb-4 d-block">Aura Home</h3>
+                    <p class="text-muted pe-lg-4">Crafting premium, sustainable furniture that turns houses into sanctuaries.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Shop</h5>
+                    <div class="footer-links">
+                        <a href="#">Living Room</a>
+                        <a href="#">Bedroom</a>
+                        <a href="#">Dining</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Company</h5>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="#">Sustainability</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <form class="d-flex mt-3">
+                        <input type="email" class="form-control me-2 bg-light border-0" placeholder="Enter your email" style="padding: 0.75rem;">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-12 text-center">
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                        <p class="text-muted small mb-0">&copy; 2026 GarageWave Home <span style="color: #e03131;">&#10084;</span>. All rights reserved.</p>
+                        <div class="footer-links d-inline-flex gap-3 mb-0">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
